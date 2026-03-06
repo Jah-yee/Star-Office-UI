@@ -2045,6 +2045,7 @@ def assets_upload():
 
 
 if __name__ == "__main__":
+    # Default 19000 avoids conflict with OpenClaw Gateway's Browser control (18791)
     raw_port = os.environ.get("STAR_BACKEND_PORT", "19000")
     try:
         backend_port = int(raw_port)
